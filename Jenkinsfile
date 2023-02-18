@@ -24,7 +24,7 @@ pipeline {
         }
     }
   post {
-    failure {
+    failure 
       echo 'Pipeline Failed'
     }
   }
