@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Starting Build'
-                sh 'g++ -o PES2UG20CS025.exe dummy.cpp'
+                sh 'g++ - dummy.cpp
                 echo 'Build Completed'
             }
         }
@@ -24,7 +24,7 @@ pipeline {
         }
     }
   post {
-    failure 
+    failure
       echo 'Pipeline Failed'
     }
   }
