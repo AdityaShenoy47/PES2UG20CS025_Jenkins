@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Starting Build'
-                sh 'g++ - dummy.cpp
+                sh error
                 echo 'Build Completed'
             }
         }
@@ -24,7 +24,7 @@ pipeline {
         }
     }
   post {
-    failure
+    failure {
       echo 'Pipeline Failed'
     }
   }
